@@ -244,14 +244,6 @@ header {
 .eatery-info p {
     font-size: 17px;
 }
-/*
-.cards-info {
-    margin-right: 58%;
-}
- ID for restaurant "À la française" ONLY 
-#cards-info {
-    padding-right: 65.7%;
-}*/
 /* Heart Icons */
 .heart {
     display: flex;
@@ -479,7 +471,7 @@ footer i {
     /* FOOTER */
     footer h3 {
         font-size: 20px;
-        margin-left: -60%;
+        margin-left: -65%;
         padding-bottom: 2.5%;
     }
     footer ul {
