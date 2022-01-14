@@ -59,6 +59,11 @@ header {
     color: #fff;
     box-shadow: 0px 7px 10px rgb(197, 195, 195);
 }
+#explore-book button:hover {
+    background: linear-gradient(#fF85DA, #9365DC);
+    font-weight: 500;
+    box-shadow: 0px 7px 10px rgb(122, 122, 122);
+}
 /* SECTION CHOICE */
 #choice {
     width: 100%;
@@ -72,105 +77,33 @@ header {
     margin-top: 4%;
     margin-left: 8%;
 }
-#choice-top {
+#choice-link article {
     width: 30%;
     margin-top: 3%;
     margin-left: 35%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 18px;
     background-color: #f6f6f5;
     padding: 30px 10px 21px 30px;
     border-radius: 23px;
     box-shadow: 0px 3px 10px lightgrey;
 }
-#choice-top:hover {
+#choice-link article:hover {
     background-color: #f6edff;
 }
-/*#choice-top i:hover {
-    color: #9356dc;
-}*/
-#choice-top a {
-    margin-right: 30%;
-    font-weight: 500;
-    margin-top: 5px;
+#choice-link article:hover {
+    box-shadow: 0px 4px 10px rgb(122, 122, 122);
 }
-#choice-top i {
+#choice-link article i {
     margin-top: 5px;
-    margin-left: 11%;
+    margin-left: -8%;
     color: grey;
+    margin-right: -5%;
 }
-#choice-top span {
-    margin-left: -12%;
-    background-color: #9356DC;
-    background-color: #9356DC;
-    padding: 11px 16px 11px 16px;
-    border-radius: 50%;
-    color: #fff;
-}
-/* SECTION CHOICE MIDDLE - SPAN 2 */
-#choice-middle {
-    width: 30%;
-    margin-top: 3%;
-    margin-left: 35%;
-    display: flex;
-    justify-content:space-around;
-    font-size:18px;
-    background-color: #f6f6f5;
-    padding: 30px 10px 21px 30px;
-    border-radius: 23px;
-    box-shadow: 0px 3px 10px lightgrey;
-}
-#choice-middle:hover {
-    background-color: #f6edff;
-}
-#choice-middle a {
-    margin-right: 30%;
-    font-weight: 500;
-    margin-top: 5px;
-}
-#choice-middle i {
-    margin-top: 5px;
-    margin-left: 11%;
-    color: grey;
-}
-#choice-middle span {
-    margin-left: -14.5%;
-    background-color: #9356DC;
-    background-color: #9356DC;
-    padding: 11px 16px 11px 16px;
-    border-radius: 50%;
-    color: #fff;
-}
-/* SECTION CHOICE BOTTOM - SPAN 3 */
-#choice-bottom {
-    width: 30%;
-    margin-top: 3%;
-    margin-left: 35%;
-    display: flex;
-    justify-content:space-around;
-    font-size:18px;
-    background-color: #f6f6f5;
-    padding: 30px 10px 21px 30px;
-    border-radius: 23px;
-    box-shadow: 0px 3px 10px lightgrey;
-    margin-bottom: 7%;
-}
-#choice-bottom:hover {
-    background-color: #f6edff;
-}
-#choice-bottom a {
-    margin-right: 30%;
-    font-weight: 500;
-    margin-top: 5px;
-}
-#choice-bottom i {
-    margin-top: 5px;
-    margin-left: 11%;
-    color: grey;
-}
-#choice-bottom span {
-    margin-left: -13.5%;
+#choice-link article span {
+    margin-top: -2%;
+    margin-left: -35%;
     background-color: #9356DC;
     background-color: #9356DC;
     padding: 11px 16px 11px 16px;
@@ -200,6 +133,8 @@ header {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+/*!   !*/
+#eatery-all article,
 #eatery-top {
     width: 34.7%;
     margin-top: 3%;
@@ -208,31 +143,6 @@ header {
     padding-bottom: 20px;
     background-color: #fff;
     position: relative;
-}
-#eatery-top-middle {
-    width: 34.7%;
-    margin-top: 3%;
-    margin-left: 8%;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    position: relative;
-}
-#eatery-bottom-middle {
-    width: 34.7%;
-    margin-top: 3%;
-    margin-left: 10.5%;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
-}
-#eatery-bottom {
-    width: 34.7%;
-    margin-top: 3%;
-    margin-left: 8%;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
 }
 .eatery-info {
     margin-left: 4%;
@@ -469,9 +379,14 @@ footer i {
         object-fit: cover;
     }
     /* FOOTER */
+    footer {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 3%;
+    }
     footer h3 {
         font-size: 20px;
-        margin-left: -65%;
+        margin-left: -63%;
         padding-bottom: 2.5%;
     }
     footer ul {
