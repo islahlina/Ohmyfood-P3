@@ -530,4 +530,65 @@ footer i {
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
 
+/*! RESPONSIVE DESIGN MOBILE !*/
+@media (max-width: 767px) {
+    /* NAV */
+    #nav-all-pages {
+        justify-content: space-evenly;
+        padding-top: 3%;
+        align-items: center;
+    }
+    #nav-all-pages a {
+        font-size: 23px;
+        padding-left: 20%;
+        padding-right: 41%;
+        padding-top: 3.7%;
+    }
+    #nav-all-pages img {
+        width: 47%;
+    }
+    /* HEADER */
+    #header-title {
+        border-top-left-radius: 42px;
+        border-top-right-radius: 42px;
+        margin-top: -11%;
+    }
+    #header-title h1 {
+        font-size: 30px;
+    }
+    #header-title i {
+        font-size: 28px;
+        padding-right: 13px;
+    }
+    /* CARDS CHOICES */
+    .title-choices {
+        font-size: 20px;
+        margin-left: 4%;
+        width: 12%;
+        margin-bottom: 4%;
+    }
+    #all-choices button {
+        width: 91.5%;
+        margin-left: 4.4%;
+        padding: 13px 16px 13px 10px;
+        border-radius: 15px;
+    }
+    #all-choices h3 {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+    .choices-info p {
+        font-size: 15px;
+    }
+    .choices-info span {
+        font-size: 17px;
+    }
+    #order {
+        margin-left: -31.5%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
 
+
+
+}
