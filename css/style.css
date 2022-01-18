@@ -413,12 +413,121 @@ footer i {
     }
 }
 /******************** PAGE MENU - LA PALETTE DU GOUT ************************/
+/* NAV ALL-PAGES */
+#nav-all-pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-all-pages a {
+    margin-left: -41%;
+    margin-right: -50%;
+    font-size: 37px;
+    padding-top: 2%;
+}
+#nav-all-pages img {
+    padding-top: 3%;
+    width: 20%;
+}
+/* HEADER ALL-PAGES */
+#header-all-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#header-all-pages img {
+    width: 100%;
+}
+/* HEADER TITLE ALL-PAGES */
+#header-title {
+    margin-top: -10%;
+    font-size: 24px;
+    background-color: #f6f6f5;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+#header-title i {
+    font-size: 35px;
+    font-weight: 100;
+}
+#header-title h1 {
+    font-family: 'Shrikhand', cursive;
+}
+/* SECTION ID : ALL CHOICES */
+#all-choices {
+    background-color: #f6f6f5;
+    margin-top: -7%;
+}
+#all-choices h3 {
+    font-size: 22px;
+}
+/* SECTION ID : H2 STARTERS */
+.title-choices {
+    padding-top: 2%;
+    font-weight: 200;
+    font-size: 29px;
+    width: 4.8%;
+    margin-left: 20.2%;
+    border-bottom: 5px solid #99E2D0;
+    margin-bottom: 2%;
+}
+/* ARTICLE CLASS: CARDS-CHOICES */
+#all-choices button {
+    background-color: #fff;
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+    border-radius: 24px;
+    margin-bottom: 2%;
+    border: none;
+    box-shadow: 0px 7px 10px rgb(197, 195, 195);
+}
+#all-choices button:hover {
 
-
-
-
-
-
-
+    box-shadow: 0px 7px 10px rgb(122, 122, 122);
+}
+.cards-choices h3 {
+    padding-bottom: 15px;
+    display: flex;
+}
+/* DIV CLASS CHOICES-INFO */
+.choices-info {
+    display: flex;
+    justify-content:space-between;
+    font-size: 26px;
+}
+.choices-info p {
+    font-weight: 100;
+    font-size:19px;
+}
+.choices-info span {
+    font-weight: 500;
+    font-size: 19px;
+}
+/* BUTTON SECTION ID : ORDER */
+#order {
+    background-color: #f6F6F5;
+}
+#order button {
+    font-size:20px;
+    border-radius: 60px;
+    padding: 15px 50px 15px 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: none;
+    color: #fff;
+    box-shadow: 0px 7px 10px rgb(197, 195, 195);
+    margin-left: 42.5%;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+#order button:hover {
+    background: linear-gradient(#fF85DA, #9365DC);
+    font-weight: 500;
+    box-shadow: 0px 7px 10px rgb(122, 122, 122);
+}
 
 
