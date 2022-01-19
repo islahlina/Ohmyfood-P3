@@ -529,7 +529,60 @@ footer i {
     font-weight: 500;
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
-
+/*! RESPONSIVE DESIGN TABLETTE !*/
+@media (max-width: 1180px) and (orientation: portrait) {
+    /* NAV ALL PAGES */
+    #nav-all-pages {
+        margin-top: 2%;
+        margin-left: 9%;
+        margin-right: -5%;
+    }
+    #nav-all-pages img {
+        width: 45%;
+    }
+    /* HEADER ALL PAGES */
+    #header-title {
+        margin-top: -14%;
+    }
+    #header-title h1 {
+        font-size: 41px;
+        margin-left: 18%;
+    }
+    #header-title i {
+        margin-right: 18%;
+    }
+    /* BUTTON ORDER */
+    #order button {
+        margin-left: 37%;
+    }
+}
+/*! RESPONSIVE TABLETTE LANDSCAPE ORIENTATION !*/
+@media (max-width: 1180px) and (orientation: landscape) {
+    /* NAV ALL PAGES */
+    #nav-all-pages a {
+        margin-right: -33%;
+        margin-left: -22%;
+        margin-top: 4%;
+    }
+    #nav-all-pages img {
+        margin-top: 2%;
+        width: 45%;
+    }
+    /* HEADER ALL PAGES */
+    #header-title h1 {
+        font-size: 58px;
+        margin-left: 18%;
+    }
+    #header-title i {
+        font-size: 43px;
+        margin-right: 18%;
+    }
+    /* ORDER BUTTON */
+    #order button {
+        margin-left: 39.5%;
+        padding: 20px 65px 20px 65px;
+    }
+}
 /*! RESPONSIVE DESIGN MOBILE !*/
 @media (max-width: 767px) {
     /* NAV */
@@ -588,7 +641,4 @@ footer i {
         padding-top: 4%;
         padding-bottom: 4%;
     }
-
-
-
 }
