@@ -530,12 +530,15 @@ footer i {
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
 /*! RESPONSIVE DESIGN TABLETTE !*/
-@media (max-width: 1180px) and (orientation: portrait) {
+@media (max-width: 992px){
     /* NAV ALL PAGES */
     #nav-all-pages {
+        width: 85%;
+    }
+    #nav-all-pages {
         margin-top: 2%;
-        margin-left: 9%;
-        margin-right: -5%;
+        margin-left: 15%;
+        margin-right: -10%;
     }
     #nav-all-pages img {
         width: 45%;
@@ -556,11 +559,11 @@ footer i {
         margin-left: 37%;
     }
 }
-/*! RESPONSIVE TABLETTE LANDSCAPE ORIENTATION !*/
-@media (max-width: 1180px) and (orientation: landscape) {
-    /* NAV ALL PAGES */
+/* RESPONSIVE TABLETTE LANDSCAPE ORIENTATION 
+@media only screen and (min-device-width : 820px) and (max-device-width : 1180px) and (orientation : landscape) {
+    /* NAV ALL PAGES 
     #nav-all-pages a {
-        margin-right: -33%;
+        margin-right: -40%;
         margin-left: -22%;
         margin-top: 4%;
     }
@@ -568,7 +571,7 @@ footer i {
         margin-top: 2%;
         width: 45%;
     }
-    /* HEADER ALL PAGES */
+    /* HEADER ALL PAGES 
     #header-title h1 {
         font-size: 58px;
         margin-left: 18%;
@@ -577,12 +580,15 @@ footer i {
         font-size: 43px;
         margin-right: 18%;
     }
-    /* ORDER BUTTON */
+    /* ORDER BUTTON 
     #order button {
         margin-left: 39.5%;
         padding: 20px 65px 20px 65px;
     }
-}
+    * {
+        border: 2px solid red;
+    }
+}*/
 /*! RESPONSIVE DESIGN MOBILE !*/
 @media (max-width: 767px) {
     /* NAV */
@@ -636,9 +642,99 @@ footer i {
     .choices-info span {
         font-size: 17px;
     }
+    /* ORDER BUTTON */
     #order {
         margin-left: -31.5%;
         padding-top: 4%;
         padding-bottom: 4%;
     }
 }
+/******************** PAGE MENU - LA NOTE ENCHANTÉE ************************/
+/* HEADER TITLE ALL-PAGES */
+#header-title-page-2 {
+    margin-top: -10%;
+    font-size: 24px;
+    background-color: #f6f6f5;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+#header-title-page-2 i {
+    font-size: 35px;
+    font-weight: 100;
+}
+#header-title-page-2 h1 {
+    font-family: 'Shrikhand', cursive;
+}
+/* BUTTON SECTION ID : ORDER */
+#order-page-2 {
+    background-color: #f6F6F5;
+}
+#order-page-2 button {
+    font-size:20px;
+    border-radius: 60px;
+    padding: 15px 50px 15px 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: none;
+    color: #fff;
+    box-shadow: 0px 7px 10px rgb(197, 195, 195);
+    margin-left: 42.5%;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+#order-page-2 button:hover {
+    background: linear-gradient(#fF85DA, #9365DC);
+    font-weight: 500;
+    box-shadow: 0px 7px 10px rgb(122, 122, 122);
+}
+/*! RESPONSIVE TABLETTE !*/
+@media (max-width: 992px) {
+    /* HEADER ALL PAGES */
+    #header-title-page-2 {
+        margin-top: -14%;
+    }
+    #header-title-page-2 h1 {
+        font-size: 41px;
+        margin-left: 18%;
+    }
+    #header-title-page-2 i {
+        margin-right: 18%;
+    }
+    /* BUTTON ORDER */
+    #order-page-2 button {
+        margin-left: 37%;
+    }
+}
+/*! RESPONSIVE MOBILE LA NOTE ENCHANTÉE !*/
+@media (max-width: 767px) {
+    /* HEADER */
+    #header-title-page-2 {
+        border-top-left-radius: 42px;
+        border-top-right-radius: 42px;
+        margin-top: -11%;
+    }
+    #header-title-page-2 h1 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+    #header-title-page-2 i {
+        font-size: 28px;
+        padding-right: 5%;
+        margin-right: 0;
+    }
+    /* ORDER BUTTON */
+    #order-page-2 {
+        margin-left: 0;
+        margin-right: 35%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+}
+
+
+
+
+
