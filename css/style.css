@@ -413,19 +413,20 @@ footer i {
     }
 }
 /******************** PAGE MENU - LA PALETTE DU GOUT ************************/
-/* NAV ALL-PAGES */
-#nav-all-pages {
+/* NAV */
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 3%;
 }
-#nav-all-pages a {
+nav a {
     margin-left: -41%;
     margin-right: -50%;
     font-size: 37px;
     padding-top: 2%;
 }
-#nav-all-pages img {
+nav img {
     padding-top: 3%;
     width: 20%;
 }
@@ -434,9 +435,7 @@ footer i {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-#header-all-pages img {
-    width: 100%;
+    padding-top: 0;
 }
 /* HEADER TITLE ALL-PAGES */
 #header-title {
@@ -458,11 +457,11 @@ footer i {
     font-family: 'Shrikhand', cursive;
 }
 /* SECTION ID : ALL CHOICES */
-#all-choices {
+main {
     background-color: #f6f6f5;
     margin-top: -7%;
 }
-#all-choices h3 {
+main h3 {
     font-size: 22px;
 }
 /* SECTION ID : H2 STARTERS */
@@ -476,7 +475,7 @@ footer i {
     margin-bottom: 2%;
 }
 /* ARTICLE CLASS: CARDS-CHOICES */
-#all-choices button {
+main button {
     background-color: #fff;
     width: 60%;
     margin-left: 20%;
@@ -486,7 +485,7 @@ footer i {
     border: none;
     box-shadow: 0px 7px 10px rgb(197, 195, 195);
 }
-#all-choices button:hover {
+main button:hover {
 
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
@@ -529,19 +528,24 @@ footer i {
     font-weight: 500;
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
-/*! RESPONSIVE DESIGN TABLETTE !*/
+/*! RESPONSIVE DESIGN TABLETTE - LA PALETTE DU GOUT !*/
 @media (max-width: 992px){
     /* NAV ALL PAGES */
-    #nav-all-pages {
+    nav {
         width: 85%;
-    }
-    #nav-all-pages {
-        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-top: -2%;
         margin-left: 15%;
         margin-right: -10%;
+        padding-top: 4%;
     }
-    #nav-all-pages img {
+    nav img {
         width: 45%;
+    }
+    /* IMG NOTE ENCHANTEE */
+    #header-img-restaurant {
+        height: 557px;
+        object-fit: cover;
     }
     /* HEADER ALL PAGES */
     #header-title {
@@ -559,54 +563,35 @@ footer i {
         margin-left: 37%;
     }
 }
-/* RESPONSIVE TABLETTE LANDSCAPE ORIENTATION 
-@media only screen and (min-device-width : 820px) and (max-device-width : 1180px) and (orientation : landscape) {
-    /* NAV ALL PAGES 
-    #nav-all-pages a {
-        margin-right: -40%;
-        margin-left: -22%;
-        margin-top: 4%;
-    }
-    #nav-all-pages img {
-        margin-top: 2%;
-        width: 45%;
-    }
-    /* HEADER ALL PAGES 
-    #header-title h1 {
-        font-size: 58px;
-        margin-left: 18%;
-    }
-    #header-title i {
-        font-size: 43px;
-        margin-right: 18%;
-    }
-    /* ORDER BUTTON 
-    #order button {
-        margin-left: 39.5%;
-        padding: 20px 65px 20px 65px;
-    }
-    * {
-        border: 2px solid red;
-    }
-}*/
-/*! RESPONSIVE DESIGN MOBILE !*/
+/*! RESPONSIVE DESIGN MOBILE - LA PALETTE DU GOUT !*/
 @media (max-width: 767px) {
     /* NAV */
-    #nav-all-pages {
-        justify-content: space-evenly;
-        padding-top: 3%;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 14%;
+        padding-bottom: 5%;
         align-items: center;
+        padding-top: 8%;
     }
-    #nav-all-pages a {
+    nav a {
         font-size: 23px;
-        padding-left: 20%;
-        padding-right: 41%;
-        padding-top: 3.7%;
+        padding-right: 17%;
+        padding-left: 4%;
     }
-    #nav-all-pages img {
-        width: 47%;
+    nav img {
+        width: 60%;
     }
-    /* HEADER */
+    /* HEADER IMG */
+    #header-img {
+        width: 100%;
+    }
+    #header-img-restaurant {
+        width: 100%;
+        height: 317px;
+        object-fit: cover;
+    }
+    /* HEADER-TITLE */
     #header-title {
         border-top-left-radius: 42px;
         border-top-right-radius: 42px;
@@ -614,10 +599,12 @@ footer i {
     }
     #header-title h1 {
         font-size: 30px;
+        margin-left: 0;
     }
     #header-title i {
         font-size: 28px;
         padding-right: 13px;
+        margin-right: 0;
     }
     /* CARDS CHOICES */
     .title-choices {
@@ -626,13 +613,13 @@ footer i {
         width: 12%;
         margin-bottom: 4%;
     }
-    #all-choices button {
+    main button {
         width: 91.5%;
         margin-left: 4.4%;
         padding: 13px 16px 13px 10px;
         border-radius: 15px;
     }
-    #all-choices h3 {
+    main h3 {
         font-size: 20px;
         padding-bottom: 8px;
     }
@@ -644,14 +631,15 @@ footer i {
     }
     /* ORDER BUTTON */
     #order {
-        margin-left: -31.5%;
         padding-top: 4%;
         padding-bottom: 4%;
+        padding-right: 31.5%;
     }
 }
 /******************** PAGE MENU - LA NOTE ENCHANTÉE ************************/
-/* HEADER TITLE ALL-PAGES */
-#header-title-page-2 {
+/* HEADER TITLE */
+/* REVOIR NOMMAGE DES ID ET CLASS : EXEMPLE = HEADER TITLE RESTAURANT */
+#header-title {
     margin-top: -10%;
     font-size: 24px;
     background-color: #f6f6f5;
@@ -662,18 +650,23 @@ footer i {
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
 }
-#header-title-page-2 i {
+#header-title i {
     font-size: 35px;
     font-weight: 100;
 }
-#header-title-page-2 h1 {
+#header-title h1 {
     font-family: 'Shrikhand', cursive;
 }
+/* HEADER IMG ONLY NOTE ENCHANTEE */
+#header-img-restaurant {
+    height: 990px;
+    object-fit: cover;
+}
 /* BUTTON SECTION ID : ORDER */
-#order-page-2 {
+#order {
     background-color: #f6F6F5;
 }
-#order-page-2 button {
+#order button {
     font-size:20px;
     border-radius: 60px;
     padding: 15px 50px 15px 50px;
@@ -685,52 +678,58 @@ footer i {
     margin-top: 4%;
     margin-bottom: 6%;
 }
-#order-page-2 button:hover {
+#order button:hover {
     background: linear-gradient(#fF85DA, #9365DC);
     font-weight: 500;
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
-/*! RESPONSIVE TABLETTE !*/
+/*! RESPONSIVE TABLETTE - LA NOTE ENCHANTÉE !*/
 @media (max-width: 992px) {
+    /* NAV */
+    nav {
+        padding-top: 4%;
+    }
+    /* HEADER IMG ONLY NOTE ENCHANTÉE */
+    #header-img-restaurant {
+        height: 600px;
+        object-fit: cover;
+    }
     /* HEADER ALL PAGES */
-    #header-title-page-2 {
+    #header-title {
         margin-top: -14%;
     }
-    #header-title-page-2 h1 {
+    #header-title h1 {
         font-size: 41px;
         margin-left: 18%;
     }
-    #header-title-page-2 i {
+    #header-title i {
         margin-right: 18%;
     }
     /* BUTTON ORDER */
-    #order-page-2 button {
+    #order button {
         margin-left: 37%;
     }
 }
-/*! RESPONSIVE MOBILE LA NOTE ENCHANTÉE !*/
+/*! RESPONSIVE MOBILE - LA NOTE ENCHANTÉE !*/
 @media (max-width: 767px) {
+    /* NAV */
+    nav {
+        padding-top: 8%;
+    }
     /* HEADER */
-    #header-title-page-2 {
+    #header-title {
         border-top-left-radius: 42px;
         border-top-right-radius: 42px;
         margin-top: -11%;
     }
-    #header-title-page-2 h1 {
+    #header-title h1 {
         font-size: 30px;
         margin-left: 0;
     }
-    #header-title-page-2 i {
+    #header-title i {
         font-size: 28px;
         padding-right: 5%;
         margin-right: 0;
-    }
-    /* ORDER BUTTON */
-    #order-page-2 {
-        margin-left: 0;
-        margin-right: 35%;
-        padding-top: 4%;
-        padding-bottom: 4%;
     }
 }
 
