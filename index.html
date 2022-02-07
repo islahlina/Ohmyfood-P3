@@ -17,118 +17,42 @@
     <title>Ohmyfood : Réservez le menu qui vous convient.</title>
 </head>
     <body>
+        <!-- PARTIE 1 MAQUETTE -->
         <header>
-            <img id="logo-accueil" src="img/logo/logo.png" alt="logo noir Ohmyfood">
-        </header>
-        <section id="explore">
-            <article id="explore-location">
+            <img src="img/logo/logo.png" alt="Logo Ohmyfood">
+            <div id="header-localisation">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Paris, Belleville">
-            </article>
-            <article id="explore-book">
+                <input id="header-input-middle" type="text" placeholder="Paris, Belleville">
+            </div>
+        </header>
+        <section>
+            <article id="article-left">
                 <h1>Réservez le menu qui vous convient</h1>
-                <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
-                <button type="submit">Explorer nos restaurants</button>
+                <form action="http://google.com">
+                    <input id="header-input-bottom" type="submit" value="Explorer nos restaurants" />
+                </form>
+            </article>
+            <article id="article-right">
+                <h2>Fonctionnement</h2>
+                <div class="article-choice">
+                    <span>1</span>
+                    <a href="#"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a>
+                </div>
+                <div class="article-choice">
+                    <span>2</span>
+                    <a href="#"><i class="fas fa-list-ul"></i> Composez votre menu</a>
+                </div>
+                <div class="article-choice">
+                    <span>3</span>
+                    <a href="#"><i class="fas fa-store"></i> Dégustez au restaurant</a>
+                </div>
             </article>
         </section>
-        <section id="choice">
-            <h1>Fonctionnement</h1>
-            <div id="choice-link">
-                <a href="#">
-                    <article>
-                        <span>1</span>
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Choisissez un restaurant</p>
-                    </article>
-                </a>
-                <a href="#">
-                    <article>
-                        <span>2</span>
-                        <i class="fas fa-list-ul"></i>
-                        <p>Composez votre menu</p>
-                    </article>
-                </a>
-                <a href="#">
-                    <article>
-                        <span>3</span>
-                        <i class="fas fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </article>
-                </a>
-            </div>
-        </section>
-
-        <section id="eatery">
-            <h1>Restaurants</h1>
-            <div id="eatery-all">
-                <article>
-                    <a href="#menu1">
-                        <img class="eatery-img" src="img/restaurants/palette-du-gout.jpg" alt="La palette du goût" title="La palette du goût">
-                        <div class="eatery-info">
-                            <div class="cards-info">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                            </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <span id="span-top">Nouveau</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="#menu2">
-                        <img class="eatery-img" src="img/restaurants/note-enchantee.jpg" alt="La note enchantée" title="La note enchantée">
-                        <div class="eatery-info">
-                            <div class="cards-info">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
-                            </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <span id="span-top-middle">Nouveau</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="#menu3">
-                        <img class="eatery-img" src="img/restaurants/a-la-francaise.jpg" alt="À la française" title="À la française">
-                        <div class="eatery-info">
-                            <div id="cards-info">
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="#menu4">
-                        <img class="eatery-img" src="img/restaurants/delice-des-sens.jpg" alt="Le délice des sens" title="Le délice des sens">
-                        <div class="eatery-info">
-                            <div class="cards-info">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                            </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </section>
-        <footer>
-            <h3>ohmyfood</h3>
-            <ul>
-                <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </footer>
+        <!-- PARTIE 2 MAQUETTE 
+        <section>
+            <article>
+                <img src="" alt="">
+            </article>
+        </section> -->
     </body>
 </html>
