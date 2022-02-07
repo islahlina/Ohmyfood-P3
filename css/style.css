@@ -6,412 +6,83 @@ a {
     text-decoration: none;
     color: #000;
 }
-/******************** PAGE D'ACCUEIL ************************/
-/* HEADER */
+/******************** PAGE INDEX - ACCUEIL OH MY FOOD ************************/
+/* HEADER ZONE */
 header {
     display: flex;
-    justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 7%;
-}
-/* SECTION EXPLORE */
-#explore-location {
-    display: flex;
-    justify-content: center;
-    background-color: #eae9ea;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-}
-#explore-location input {
-    border: none;
-    background-color: #eae9ea;
-    font-size: 15px;
-    text-align: center;
-    margin-left: -10px;
-}
-#explore-location i {
-    padding-right: 16px;
-}
-#explore-book {
-    justify-content: center;
-    text-align: center;
-    background-color: #f6f6f5;
-    padding-bottom: 8%;
-}
-#explore-book h1 {
-    width: 80%;
-    margin-left: 10%;
-    font-size: 28px;
-    padding-top: 9%;
-    padding-bottom:0.5%;
-}
-#explore-book h3 {
-    font-size: 23px;
-    font-weight: 100;
-    padding-bottom: 2%;
-}
-#explore-book button {
-    font-size:20px;
-    border-radius: 60px;
-    padding: 20px;
-    background: linear-gradient(#FF79DA,#9356DC);
-    border: none;
-    color: #fff;
-    box-shadow: 0px 7px 10px rgb(197, 195, 195);
-}
-#explore-book button:hover {
-    background: linear-gradient(#fF85DA, #9365DC);
-    font-weight: 500;
-    box-shadow: 0px 7px 10px rgb(122, 122, 122);
-}
-/* SECTION CHOICE */
-#choice {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-}
-/* SECTION CHOICE TOP - SPAN 1 */
-#choice h1 {
-    font-size: 28px;
-    margin-top: 4%;
-    margin-left: 8%;
-}
-#choice-link article {
-    width: 30%;
     margin-top: 3%;
-    margin-left: 35%;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 18px;
-    background-color: #f6f6f5;
-    padding: 30px 10px 21px 30px;
-    border-radius: 23px;
-    box-shadow: 0px 3px 10px lightgrey;
+    margin-bottom: 3%;
+    margin-left: 36%;
 }
-#choice-link article:hover {
-    background-color: #f6edff;
+header img {
+    width: 40%;
+    margin-bottom: 3%;
 }
-#choice-link article:hover {
-    box-shadow: 0px 4px 10px rgb(122, 122, 122);
-}
-#choice-link article i {
-    margin-top: 5px;
-    margin-left: -8%;
-    color: grey;
-    margin-right: -5%;
-}
-#choice-link article span {
-    margin-top: -2%;
-    margin-left: -35%;
-    background-color: #9356DC;
-    background-color: #9356DC;
-    padding: 11px 16px 11px 16px;
-    border-radius: 50%;
-    color: #fff;
-}
-/* SECTION EATERY */
-#eatery {
-    background-color: #f6f6f6;
-    width: 100%;
-}
-#eatery h1 {
-    font-size: 28px;
-    margin-left: 8%;
-    padding-top: 3%;
-}
-#eatery-all {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 7%;
-}
-/* SECTION EATERY TOP - 1 */
-.eatery-img {
-    width: 100%;
-    height:300px;
-    object-fit:cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-#eatery-all article,
-#eatery-top {
-    width: 34.7%;
-    margin-top: 3%;
+#header-localisation {
     margin-left: 10.5%;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    position: relative;
-}
-.eatery-info {
-    margin-left: 4%;
-    margin-top: 3%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 4%;
-}
-.eatery-info p {
-    font-size: 17px;
-}
-/* Heart Icons */
-.heart {
-    display: flex;
-}
-.heart i {
-    font-size: 33px;
-    font-weight: 100;
-}
-/*  SPAN NEW position */
-#span-top {
-    position:absolute;
-    left: 80.2%;
-    bottom:88.5%;
-    background-color: #98e2cf;
-    padding: 9px 12px 9px 12px;
-    border-radius: 2px;
-    color: #068f6f;
-    font-weight: 500;
-}
-#span-top-middle {
-    position: absolute;
-    bottom: 88.5%;
-    left: 80.2%;
-    background-color: #98e2cf;
-    padding: 9px 12px 9px 12px;
-    border-radius: 2px;
-    color: #068f6f;
-    font-weight: 500;
 }
 
-/* FOOTER */
-footer {
-    background-color: rgb(56, 56, 56);
-    padding-bottom: 3%;
-}
-footer h3 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 28px;
-    color: #fff;
+#header-localisation input {
     text-align: center;
-    padding-top: 2%;
-    font-weight: normal;
+    border: none;
+    font-size: 15px;
 }
-footer ul {
-    list-style-type: none;
+/* SECTION*/
+section {
+    display: flex;
+    width: 100%;
+}
+#article-left {
+    width: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0px 245px 0px;
+}
+#article-left h1 {
+    padding-top: 22%;
+    font-size: 22px;
+}
+#article-left input {
+    margin-top: 2%;
+    padding: 13px 30px 13px 30px;
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    background: linear-gradient(#FF79DA,#9356DC);
+    color: #fff;
+}
+#article-right {
+    width: 50%;
     margin-top: 2%;
     display: flex;
-    justify-content: space-around;
-    margin-right: 7%;
+    flex-direction: column;
 }
-footer a {
-    color: #fff;
+#article-right h2 {
+    margin-bottom: 8%;
+    text-align: center;
 }
-footer i {
-    padding-right: 10px;
+.article-choice {
+    margin-left: 26%;
+    margin-bottom: 6%;
+    background-color: #f2f2f2;
+    width: 40%;
+    padding: 32px 30px 30px 50px;;
 }
-/*! RESPONSIVE TABLETTE !*/
-@media (max-width: 992px) {
-    #explore-location i {
-        font-size:21px;
-    }
-    #explore-location input {
-        font-size: 21px;
-    }
-    #choice {
-        margin-bottom: 10%;
-    }
-    #choice-link {
-        margin-top: 5%;
-    }
-    #choice-link article {
-        padding: 25px 60px 20px 60px;
-        margin-left: 28%;
-    }
-    #choice-link  p {
-        margin-left: 10%;
-        margin-top: 2.3%;
-    }
-    #choice-link i {
-        margin-top:2.3%;
-    }
-    #choice-link article span {
-        margin-left: -38%;
-        margin-right: 24%;
-        margin-top: 1.2%;
-    }
-    #eatery {
-        padding-top: 2%;
-    }
-    #eatery-all {
-        margin-top: 2%;
-        flex-direction: column;
-    }
-    #eatery-all article {
-        width: 70%;
-        margin-left: 15%;
-    }
-    #span-top {
-        left: 82%;
-        bottom: 87%;
-    }
-    #span-top-middle {
-        left: 82%;
-        bottom: 87%;
-    }
+.article-choice i {
+    padding-right: 10%;
+    padding-left: 7%;
 }
-/*! RESPONSIVE TABLETTE LANDSCAPE ORIENTATION !*/
-@media screen and (orientation: landscape) {
-    #choice {
-        margin-bottom: 8%;
-    }
-    #eatery {
-        padding-top: 2%;
-    }
-    #eatery h1 {
-        padding-bottom: 2%;
-    }
-    #span-top {
-        left: 75%;
-        bottom: 87%;
-    }
-    #span-top-middle {
-        left: 75%;
-        bottom: 87%;
-    }
+.article-choice span {
+    margin-left: -25%;
+    background-color:#9356dc;
+    padding:13px 18px 13px 18px;
+    border-radius: 100%;
 }
-/*! RESPONSIVE DESIGN MOBILE !*/
-@media (max-width: 767px) {
-    /* HEADER IMG */
-    #logo-accueil {
-        width: 40%;
-        margin-top: 5px;
-    }
-    /* SECTION EXPLORER */
-    #explore-location {
-        padding: 15px;
-        box-shadow: inset 0px 9px 5px -10px grey;
-    }
-    #explore-location input {
-        font-weight: 500;
-        color: #000000;
-    }
-    #explore-book h1 {
-        width: 65%;
-        margin-left: 17.5%;
-        font-size: 25px;
-    }
-    #explore-book h3 {
-        margin-top: 3%;
-        padding: 20px;
-        margin-bottom: 5%;
-        font-size: 18px;
-    }
-    #explore-book button {
-        padding: 17px;
-        font-size: 15px;
-    }
-    /* SECTION CHOICE */
-    #choice {
-        width: 100%;
-    }
-    /* CHOICE TOP */
-    #choice h1 {
-        font-size: 26px;
-        margin-bottom: 8%;
-        margin-left: 5%;
-        margin-top: 13%;
-    }
-    #choice-link article {
-        width: 86%;
-        margin-left: 6.8%;
-        border-radius: 10px;
-        padding: 20px 0px 20px 10px;
-        margin-bottom: 6%;
-    }
-    #choice-link article span {
-        margin-left: -23%;
-        margin-top: 1%;
-        padding: 5px 10px 5px 10px;
-    }
-    #choice-link article a {
-        font-size: 16px;
-    }
-    #choice-link article i {
-        margin-left: -27%;
-        margin-top: 2%;
-    }
-    #choice-link article p {
-        margin-top: 1.5%;
-        margin-left: 0;
-    }
-    /* SECTION EATERY */
-    #eatery h1 {
-        padding-top: 15%;
-        font-size: 26px;
-        padding-bottom: 5%;
-        margin-left: 5%;
-    }
-    #eatery-all {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    #eatery-all article {
-        width: 90%;
-        margin-left: 5%;
-    }
-    #eatery-img {
-        object-fit: cover;
-        width: 100%;
-        height: 230px;
-    }
-    #span-top {
-        margin-left: -9%;
-        top: 4%;
-        padding-bottom: 28px;
-    }
-    #span-top-middle {
-        margin-left: -9%;
-        top: 4%;
-        padding-bottom: 28px;
-    }
-    .eatery-info {
-        justify-content: space-between;
-        margin-right: 0;
-    }
-    .heart {
-        margin-right: 5%;
-    }
-    .eatery-info h3 {
-        font-size: 19px;
-    }
-    .eatery-info p {
-        font-size: 19px;
-    }
-    /* FOOTER */
-    footer {
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding-left: 3%;
-    }
-    footer h3 {
-        font-size: 20px;
-        margin-left: -63%;
-        padding-bottom: 2.5%;
-    }
-    footer ul {
-        display: flex;
-        flex-direction: column;
-    }
-    footer a {
-        margin-left: -7%;
-    }
-    footer li {
-        padding-bottom: 3%;
-    }
-}
+
+
+
+
+
 /******************** PAGE MENU - LA PALETTE DU GOUT ************************/
 /* NAV */
 nav {
