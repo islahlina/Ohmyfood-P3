@@ -24,35 +24,101 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <input id="header-input-middle" type="text" placeholder="Paris, Belleville">
             </div>
+            <div id="header-info">
+                <div id="header-left">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <form action="#eatery">
+                        <input id="header-input-bottom" type="submit" value="Explorer nos restaurants" />
+                    </form>
+                </div>
+                <div id="header-right">
+                    <h2>Fonctionnement</h2>
+                    <div class="article-choice">
+                        <span>1</span>
+                        <a href="#eatery"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a>
+                    </div>
+                    <div class="article-choice">
+                        <span>2</span>
+                        <a href="#"><i class="fas fa-list-ul"></i> Composez votre menu</a>
+                    </div>
+                    <div class="article-choice">
+                        <span>3</span>
+                        <a href="#eatery"><i class="fas fa-store"></i> Dégustez au restaurant</a>
+                    </div>
+                </div>
+            </div>
         </header>
-        <section>
-            <article id="article-left">
-                <h1>Réservez le menu qui vous convient</h1>
-                <form action="http://google.com">
-                    <input id="header-input-bottom" type="submit" value="Explorer nos restaurants" />
-                </form>
-            </article>
-            <article id="article-right">
-                <h2>Fonctionnement</h2>
-                <div class="article-choice">
-                    <span>1</span>
-                    <a href="#"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a>
-                </div>
-                <div class="article-choice">
-                    <span>2</span>
-                    <a href="#"><i class="fas fa-list-ul"></i> Composez votre menu</a>
-                </div>
-                <div class="article-choice">
-                    <span>3</span>
-                    <a href="#"><i class="fas fa-store"></i> Dégustez au restaurant</a>
-                </div>
-            </article>
+        <section id="eatery">
+            <h1>Restaurants</h1>
+            <div id="eatery-all">
+                <article>
+                    <a href="#menu1">
+                        <img class="eatery-img" src="img/restaurants/palette-du-gout.jpg" alt="La palette du goût" title="La palette du goût">
+                        <div class="eatery-info">
+                            <div class="cards-info">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <span id="span-top">Nouveau</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="#menu2">
+                        <img class="eatery-img" src="img/restaurants/note-enchantee.jpg" alt="La note enchantée" title="La note enchantée">
+                        <div class="eatery-info">
+                            <div class="cards-info">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <span id="span-top-middle">Nouveau</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="#menu3">
+                        <img class="eatery-img" src="img/restaurants/a-la-francaise.jpg" alt="À la française" title="À la française">
+                        <div class="eatery-info">
+                            <div id="cards-info">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#menu4">
+                        <img class="eatery-img" src="img/restaurants/delice-des-sens.jpg" alt="Le délice des sens" title="Le délice des sens">
+                        <div class="eatery-info">
+                            <div class="cards-info">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
         </section>
-        <!-- PARTIE 2 MAQUETTE 
-        <section>
-            <article>
-                <img src="" alt="">
-            </article>
-        </section> -->
+        <footer>
+            <h3>ohmyfood</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
