@@ -8,65 +8,68 @@ a {
 }
 /******************** PAGE INDEX - ACCUEIL OH MY FOOD ************************/
 /* HEADER ZONE */
-header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 36%;
-}
 header img {
-    width: 40%;
+    width: 37.56%;
     margin-bottom: 3%;
+    background-color: #f6f6f6;
+    padding: 32px 90px 16px 89px;
+    padding-top: 14%;
 }
 #header-localisation {
-    margin-left: 10.5%;
+    background-color: #f6f6f6;
+    width: 31.01%;
+    padding-left: 19%;
+    margin-top: -47px;
+    padding-bottom: 2%;
 }
-
 #header-localisation input {
     text-align: center;
     border: none;
     font-size: 15px;
 }
 /* SECTION*/
-section {
+#header-info {
     display: flex;
     width: 100%;
 }
-#article-left {
+#header-left {
     width: 50%;
-    background-color: #f2f2f2;
+    background-color: #f6f6f6;
     text-align: center;
-    padding: 20px 0px 245px 0px;
 }
-#article-left h1 {
-    padding-top: 22%;
+#header-left h1 {
     font-size: 22px;
 }
-#article-left input {
+#header-left input {
     margin-top: 2%;
     padding: 13px 30px 13px 30px;
     border-radius: 20px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f6f6f6;
     background: linear-gradient(#FF79DA,#9356DC);
     color: #fff;
+    border-radius: 20px;
 }
-#article-right {
+#header-right {
     width: 50%;
-    margin-top: 2%;
+    margin-top: -16%;
+    margin-bottom: 8.5%;
     display: flex;
     flex-direction: column;
 }
-#article-right h2 {
+#header-right h2 {
     margin-bottom: 8%;
     text-align: center;
+}
+#header-input-bottom {
+    font-size: 14px;
 }
 .article-choice {
     margin-left: 26%;
     margin-bottom: 6%;
     background-color: #f2f2f2;
     width: 40%;
-    padding: 32px 30px 30px 50px;;
+    padding: 32px 30px 30px 50px;
+    border-radius: 20px;
 }
 .article-choice i {
     padding-right: 10%;
@@ -77,8 +80,132 @@ section {
     background-color:#9356dc;
     padding:13px 18px 13px 18px;
     border-radius: 100%;
+    color: #fff;
 }
-
+.article-choice:hover {
+    background-color: #f5eeff;
+}
+.article-choice:hover i {
+    color: #9356DC;
+}
+/* EATERY */
+#eatery {
+    background-color: #f6f6f6;
+    width: 100%;
+}
+#eatery h1 {
+    font-size: 28px;
+    margin-left: 8%;
+    padding-top: 3%;
+}
+#eatery-all {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 7%;
+}
+/* SECTION EATERY TOP - 1 */
+.eatery-img {
+    width: 100%;
+    height:300px;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#eatery-all article {
+    width: 34.7%;
+    margin-top: 3%;
+    margin-left: 10.5%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.eatery-info {
+    margin-left: 4%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+}
+.eatery-info p {
+    font-size: 17px;
+}
+/* Heart Icons */
+.heart {
+    display: flex;
+}
+.heart i {
+    font-size: 33px;
+    font-weight: 100;
+}
+/*  SPAN NEW position */
+#span-top {
+    position:absolute;
+    left: 80.2%;
+    bottom:88.5%;
+    background-color: #98e2cf;
+    padding: 9px 12px 9px 12px;
+    border-radius: 2px;
+    color: #068f6f;
+    font-weight: 500;
+}
+#span-top-middle {
+    position: absolute;
+    bottom: 88.5%;
+    left: 80.2%;
+    background-color: #98e2cf;
+    padding: 9px 12px 9px 12px;
+    border-radius: 2px;
+    color: #068f6f;
+    font-weight: 500;
+}
+/*  SPAN NEW position */
+#span-top {
+    position:absolute;
+    left: 80.2%;
+    bottom:88.5%;
+    background-color: #98e2cf;
+    padding: 9px 12px 9px 12px;
+    border-radius: 2px;
+    color: #068f6f;
+    font-weight: 500;
+}
+#span-top-middle {
+    position: absolute;
+    bottom: 88.5%;
+    left: 80.2%;
+    background-color: #98e2cf;
+    padding: 9px 12px 9px 12px;
+    border-radius: 2px;
+    color: #068f6f;
+    font-weight: 500;
+}
+/* FOOTER */
+footer {
+    background-color: rgb(56, 56, 56);
+    padding-bottom: 3%;
+}
+footer h3 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    padding-top: 2%;
+    font-weight: normal;
+}
+footer ul {
+    list-style-type: none;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 7%;
+}
+footer a {
+    color: #fff;
+}
+footer i {
+    padding-right: 10px;
+}
 
 
 
