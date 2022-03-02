@@ -333,7 +333,14 @@ footer i {
     }
 }*/
 /******************** PAGE MENU - LA PALETTE DU GOUT ************************/
-/* NAV */
+/* HEADER ALL-PAGES */
+#header-all-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    background-color: #F6F6F6;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -351,14 +358,7 @@ nav a {
     width: 22%;
     margin-bottom: 2%;
 }
-/* HEADER ALL-PAGES */
-#header-all-pages {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-    background-color: #F6F6F6;
-}
+/* MAIN */
 #header-img {
     width: 50%;
     height: 1200px;
@@ -372,11 +372,7 @@ nav a {
     margin-left: 2%;
     margin-top: 2%;
 }
-/* MAIN-TOP */
-#main-top {
-    margin-top: 5%;
-}
-#main-top-right {
+#menu-main-top {
     margin-top: -85%;
     margin-left: 54%;
     font-size: 29px;
@@ -386,29 +382,19 @@ nav a {
     align-items: center;
     justify-content:space-between;
 }
-#main-top-right i {
+#menu-main-top i {
     font-size: 23px;
     margin-right: 15%;
     font-weight: 100;
 }
-#main-top-right h1 {
+#menu-main-top h1 {
     font-family: 'Shrikhand', cursive;
 }
-/* SECTION ID : ALL CHOICES */
 main {
-    background-color: #f6f6f5;
+    background-color: #f6f6f6;
     margin-top: -7%;
 }
-/* STARTERS */
-#starters {
-    width: 50%;
-    margin-left: 50%;
-}
-#main-courses {
-    width: 50%;
-    margin-left: 50%;
-}
-#desserts {
+#menu-main {
     width: 50%;
     margin-left: 50%;
 }
@@ -476,7 +462,7 @@ main button:hover {
     font-weight: 500;
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
 }
-/*! RESPONSIVE DESIGN TABLETTE - LA PALETTE DU GOUT !*/
+/*! RESPONSIVE DESIGN TABLETTE - LA PALETTE DU GOUT !
 @media (min-width: 768px) and (max-width: 1180px) {
     #main-top-right {
         margin-top: -106%;
@@ -484,18 +470,16 @@ main button:hover {
     #order button {
         margin-left: 66.5%;
     }
-}
+}*/
 /*! RESPONSIVE DESIGN MOBILE - LA PALETTE DU GOUT !*/
 @media (max-width: 767px) {
-    * {
-        border: 1px solid purple;
-    }
     /* HEADER */
     #header-all-pages {
         background-color: #fff;
     }
     nav {
-        padding-top: 6%;
+        padding-top: 8%;
+        padding-bottom: 1%;
         background-color: #fff;
     }
     nav a {
@@ -503,6 +487,7 @@ main button:hover {
         margin-left: -17%;
         margin-right: -23%;
         padding-top: 0;
+        margin-top: -3%;
     }
     #nav-img {
         width: 50%;
@@ -510,54 +495,64 @@ main button:hover {
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        margin-bottom: 0;
+        margin-bottom: 1%;
+        margin-top: -3%;
         background-color: #fff;
     }
+    /* MAIN */
     #header-img {
         width: 100%;
         height: 250px;
         object-fit: cover;
         padding: 0%;
         margin-left: 0;
+        margin-top: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
-    #main-top-right {
-        /*margin-top: 0;*/
-        margin-left: 0;
-        font-size: 15px;
+    main {
+        margin-top: 0;
     }
-    #main-top-right h1 {
-        font-size: 29px;
-        margin-left: -2%;
-    }
-    #main-top-right i {
-        font-size: 24px;
-        margin-right: 0;
-        padding-right: 0;
-    }
-    /* MAIN */
-    #starters {
+    #menu-main {
+        position: relative;
+        margin-top: -16%;
         width: 100%;
-        margin-left: 5%;
+        margin-left: 0;
     }
+    #menu-main h2 {
+        margin-top: 4%;
+    }
+    #menu-main-top {
+        width: 83%;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 24px;
+        padding: 35px 35px 0px 35px;
+        background-color: #f6f6f6;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    #menu-main-top h1 {
+        font-family: 'Shrikhand', cursive;
+    }
+    #menu-main-top i {
+        font-size: 23px;
+        margin-right: 0;
+    }
+    /* CHOICES */
     .title-choices {
         font-size: 18px;
-        margin-left: 2%;
+        margin-left: 5%;
     }
+    /* BUTTON */
     main button {
         width: 90%;
         border-radius: 15px;
-        margin-left: 0;
-    }
-    #main-courses {
-        width: 100%;
-        margin-left: 5%;
-    }
-    #desserts {
-        width: 100%;
         margin-left: 5%;
     }
     #order button {
@@ -566,9 +561,6 @@ main button:hover {
         margin-bottom: 14%;
         margin-top: 8%;
     }
-
-
-
 }
 /******************** PAGE MENU - LA NOTE ENCHANTÉE ************************/
 /* HEADER TITLE */
