@@ -16,15 +16,17 @@
     <title>Menu - La note enchantée</title>
 </head>
 <body>
-    <header id="header-all-pages">
+    <header id="header-all-pages"> <!-- RAJOUT D'UN ID DANS LE HEADER CAR INDEX.html A AUSSI UN HEADER QUI EST TOTALEMENT DIFFÉRENT -->
         <nav>
-            <a href="#index.html"><i class="fas fa-arrow-left"></i></a>
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
             <img id="nav-img" src="img/logo/logo.png" alt="logo oh my food">
         </nav>
     </header>
     <main>
-        <img id="header-img-restaurant" src="img/restaurants/note-enchantee.jpg" alt="La note enchantée"> <!-- ID CAR PAS LA MM TAILLE QUE IMG PALETTE DU GOUT (verticale) -->
-        <section id="menu-main-enchanted">
+        <div id="top-img">
+            <img id="header-img" src="img/restaurants/note-enchantee.jpg" alt="Note enchantée">
+        </div>
+        <section id="menu-main">
             <article id="menu-main-top">
                 <h1>La note enchantée</h1>
                 <i class="far fa-heart"></i>
@@ -39,6 +41,11 @@
                     </div>
                 </article>
             </button>
+            <!--
+                <div class="checked">
+                    <i class="far fa-check"></i>
+                </div>
+            -->
             <button>
                 <article class="cards-choices">
                     <h3>Caviar osciètre</h3>
@@ -86,15 +93,15 @@
                 </article>
             </button>
             <button>
-                <article class="cards-choices"> <!-- CHOICES-CARDS -->
+                <article class="cards-choices">
                     <h3>Mijoté de queue de boeuf</h3>
-                    <div class="choices-info"> <!-- CHOICES-INFO -->
+                    <div class="choices-info">
                         <p>Et riz sauvage aux zests de citron</p>
                         <span>44€</span>
                     </div>
                 </article>
             </button>
-            <h2 class="title-choices">DESSERTS</h2> <!-- UTILISER LES SELECTEURS (ENLEVER CLASS) CHOICES-TITLE -->
+            <h2 class="title-choices">DESSERTS</h2>
             <button>
                 <article class="cards-choices">
                     <h3>Macaron noisette et chocolat</h3>
@@ -124,11 +131,10 @@
             </button>
         </section>
     </main>
-    <section id="order-one">
+    <section id="order">
         <button>Commander</button>
     </section>
     <footer>
-        <!-- VOIR COMMENT RAMENER LE FOOTER DE PAGE D'ACCUEIL À PAGE 1 -->
         <h3>ohmyfood</h3>
         <ul>
             <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>

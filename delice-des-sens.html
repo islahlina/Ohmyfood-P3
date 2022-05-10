@@ -16,18 +16,20 @@
     <title>Menu - Le délice des sens</title>
 </head>
 <body>
-    <header id="header-all-pages"> <!-- ID DANS HEADER CAR INDEX.html A AUSSI UN HEADER QUI EST TOTALEMENT DIFFÉRENT -->
+    <header id="header-all-pages"> <!-- RAJOUT D'UN ID DANS LE HEADER CAR INDEX.html A AUSSI UN HEADER QUI EST TOTALEMENT DIFFÉRENT -->
         <nav>
             <a href="index.html"><i class="fas fa-arrow-left"></i></a>
             <img id="nav-img" src="img/logo/logo.png" alt="logo oh my food">
         </nav>
     </header>
     <main>
-        <img id="header-img" src="img/restaurants/delice-des-sens.jpg" alt="Le délice des sens">
+        <div id="top-img">
+            <img id="header-img" src="img/restaurants/delice-des-sens.jpg" alt="Délice des sens">
+        </div>
         <section id="menu-main">
             <article id="menu-main-top">
-                    <h1>Le délice des sens</h1>
-                    <i class="far fa-heart"></i>
+                <h1>Le délice des sens</h1>
+                <i class="far fa-heart"></i>
             </article>
             <h2 class="title-choices">ENTRÉES</h2>
             <button>
@@ -37,8 +39,13 @@
                         <p>Assaisonné au yuzu</p>
                         <span>25€</span>
                     </div>
-                    </article>
+                </article>
             </button>
+            <!--
+                <div class="checked">
+                    <i class="far fa-check"></i>
+                </div>
+            -->
             <button>
                 <article class="cards-choices">
                     <h3>Bouchée de homard croustillant</h3>
@@ -119,7 +126,6 @@
         <button>Commander</button>
     </section>
     <footer>
-        <!-- VOIR COMMENT RAMENER LE FOOTER DE PAGE D'ACCUEIL À PAGE 1 -->
         <h3>ohmyfood</h3>
         <ul>
             <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
