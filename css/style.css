@@ -682,13 +682,14 @@ footer a {
 }
 */
 
-/******************** PAGE MENU - LA PALETTE DU GOUT ************************/
+/********************! PAGE MENU - LA PALETTE DU GOUT !************************/
 /* HEADER ALL-PAGES */
 #header-all-pages {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #ffffff;
+    box-shadow: inset 0px 2px 7px -6px;
 }
 nav {
     width: 100%;
@@ -707,40 +708,41 @@ nav i {
     padding-left: 20px;
 }
 #nav-img {
-    width: 35%;
+    width: 25%;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-right: 55px;
 }
 /* MAIN */
+main {
+    background-color: #f6f6f6;
+    margin-top: 0;
+    width: 100%;
+}
 #top-img {
-    width: 50%;
+    width: 100%;
 }
 #palette-img {
     width: 100%;
-    height: 1000px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     padding: 0;
-    border-top-left-radius: 62px;
-    border-top-right-radius: 62px;
-    border-bottom-left-radius: 62px;
-    border-bottom-right-radius: 62px;
-    background-color: #F6F6F6;
-    margin-left: 2%;
-    margin-top: 10%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
 }
 #menu-main {
-    width: 60%;
+    width: 100%;
 }
 #menu-main-top {
+    width: 100%;
     margin-top: 0;
-    margin-left: 4%;
-    font-size: 21px;
+    font-size: 25px;
     background-color: #f6f6f6;
-    padding: 35px 70px 26px 61px;
     display: flex;
-    align-items: center;
-    justify-content:space-between;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .title-heart {
     width: 30px;
@@ -759,11 +761,7 @@ nav i {
 }
 #menu-main-top h1 {
     font-family: 'Shrikhand', cursive;
-}
-main {
-    background-color: #f6f6f6;
-    margin-top: 0;
-    display: flex;
+    padding-right: 35px;
 }
 
 /* SECTION ID : H2 STARTERS */
@@ -772,20 +770,38 @@ main {
     font-weight: 200;
     font-size: 23px;
     width: 4.8%;
-    margin-left: 14%;
+    margin-left: 28px;
     border-bottom: 5px solid #99E2D0;
     margin-bottom: 2%;
 }
-/* ARTICLE CLASS: CARDS-CHOICES */
+/* TOP MENU */
+.top-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* ARTICLE CLASS: BUTTON TOP MENU + CARDS-CHOICES */
 main button {
     background-color: #fff;
     width: 75%;
-    margin-left: 14%;
     padding: 20px;
     border-radius: 24px;
     margin-bottom: 2%;
     border: none;
     box-shadow: 0px 7px 10px rgb(197, 195, 195);
+}
+.top-button {
+    margin-left: 3%;
+    margin-right: 30px;
+    width: 30%;
+}
+.middle-button {
+    margin-right: 30px;
+    width: 30%;
+}
+.bottom-button {
+    width: 30%;
+    margin-right: 3%;
 }
 main button:hover {
     box-shadow: 0px 7px 10px rgb(122, 122, 122);
@@ -850,6 +866,13 @@ button:hover .fa-check-circle {
     font-weight: 100;
     font-size:14px;
 }
+/* ELLIPSIS CHOICES-INFO P */
+button:hover .choices-info p {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 .choices-info span {
     font-weight: 500;
     font-size: 15px;
@@ -858,10 +881,12 @@ button:hover .fa-check-circle {
 #order {
     background-color: #f6f6f6;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #order button {
-    margin-left: 56%;
-    margin-bottom: 2%;
+    margin-left: 0;
+    margin-bottom: 50px;
     margin-top: 2%;
     font-size:20px;
     border-radius: 60px;
@@ -870,7 +895,7 @@ button:hover .fa-check-circle {
     border: none;
     color: #fff;
     box-shadow: 0px 7px 10px rgb(197, 195, 195);
-    width: 35%;
+    width: 30%;
     text-align: center;
 }
 #order button:hover {
@@ -907,9 +932,10 @@ button:hover .fa-check-circle {
         padding-left: 20px;
     }
     #nav-img {
-        width: 35%;
+        width: 25%;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-right: 15px;
     }
     /* MAIN */
     #top-img {
@@ -921,6 +947,8 @@ button:hover .fa-check-circle {
         object-position: center;
         height: 1000px;
         margin-top: 11%;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
     }
     main {
         display:flex;
@@ -947,6 +975,24 @@ button:hover .fa-check-circle {
     .title-choices {
         margin-left: 14%;
     }
+    /* TOP MENU */
+    .top-menu {
+        display: inline-block;
+        width: 100%;
+    }
+    .top-button {
+        width: 75%;
+        margin-left: 14%;
+        margin-right: 0;
+    }
+    .middle-button {
+        margin-right: 0;
+        width: 75%;
+    }
+    .bottom-button {
+        margin-right: 0;
+        width: 75%;
+    }
     main button {
         width: 75%;
         margin-left: 14%;
@@ -954,7 +1000,17 @@ button:hover .fa-check-circle {
     .choices-info p {
         font-size: 14px;
     }
+    /* ELLIPSIS CHOICES-INFO P */
+    button:hover .choices-info p {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
     /* ORDER BUTTON */
+    #order {
+        justify-content: initial;
+    }
     #order button {
         width: 35%;
         margin-left: 56%;
@@ -966,6 +1022,9 @@ button:hover .fa-check-circle {
 
 /*! RESPONSIVE DESIGN MOBILE - LA PALETTE DU GOUT !*/
 @media (max-width: 767px) {
+    * {
+        margin: 0;
+    }
     /* HEADER */
     #header-all-pages {
         background-color: #fff;
@@ -1054,6 +1113,32 @@ button:hover .fa-check-circle {
         font-size: 18px;
         margin-left: 5%;
     }
+    /* TOP MENU */
+    .top-menu {
+        display: inline-block;
+        width: 100%;
+        justify-content:initial;
+    }
+    .top-button {
+        margin-left: 5%;
+        width: 90%;
+        margin-right:0;
+    }
+    .middle-button {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .bottom-button {
+        width: 90%;
+        margin-right: 0;
+    }
+    /* ELLIPSIS CHOICES-INFO P */
+    button:hover .choices-info p {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
     /* BUTTON */
     main button {
         width: 90%;
@@ -1064,10 +1149,15 @@ button:hover .fa-check-circle {
     #order {
         width: 100%;
         padding-left: 0;
+        justify-content: initial;
     }
     #order button {
         width: 50%;
         margin-left: 25%;
+    }
+    /* FOOTER */
+    footer {
+        padding-bottom: 2%;
     }
 }
 
