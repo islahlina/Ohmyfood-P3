@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- TITLE -->
-    <title>Ohmyfood : Réservez le menu qui vous convient.</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../P3_kim_melyna/css/style.css">
+        <!-- TITLE -->
+        <title>Ohmyfood : Réservez le menu qui vous convient.</title>
+    </head>
     <body>
-        <!-- PARTIE 1 MAQUETTE -->
+        <!-- PARTIE HEADER -->
         <header>
-            <img src="img/logo/logo.png" alt="Logo Ohmyfood">
+            <img src="../P3_kim_melyna/img/logo/logo.png" alt="Logo Ohmyfood">
             <div id="header-localisation">
                 <i class="fas fa-map-marker-alt"></i>
                 <input id="header-input-middle" type="text" placeholder="Paris, Belleville">
@@ -34,84 +34,106 @@
                 </div>
                 <div id="header-right">
                     <h2>Fonctionnement</h2>
-                    <div class="article-choice">
-                        <span>1</span>
-                        <a href="#eatery"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a>
-                    </div>
-                    <div class="article-choice">
-                        <span>2</span>
-                        <a href="#"><i class="fas fa-list-ul"></i> Composez votre menu</a>
-                    </div>
-                    <div class="article-choice">
-                        <span>3</span>
-                        <a href="#eatery"><i class="fas fa-store"></i> Dégustez au restaurant</a>
+                    <div id="header-right-article">
+                        <div class="article-choice">
+                            <span>1</span>
+                            <a href="#eatery"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a>
+                        </div>
+                        <div class="article-choice">
+                            <span>2</span>
+                            <a href="#"><i class="fas fa-list-ul"></i> Composez votre menu</a>
+                        </div>
+                        <div class="article-choice">
+                            <span>3</span>
+                            <a href="#eatery"><i class="fas fa-store"></i> Dégustez au restaurant</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- FIN DU HEADER -->
+        <!-- SECTION EATERY -->
         <section id="eatery">
             <h1>Restaurants</h1>
             <div id="eatery-all">
                 <article>
                     <a href="palette-du-gout.html">
-                        <img class="eatery-img" src="img/restaurants/palette-du-gout.jpg" alt="La palette du goût" title="La palette du goût">
+                        <img class="eatery-img" src="../P3_kim_melyna/img/restaurants/palette-du-gout.jpg" alt="La palette du goût" title="La palette du goût">
                         <div class="eatery-info">
                             <div class="cards-info">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            <svg class="title-heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                         c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                         c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                         s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                         C512,93.417,453.532,30,376,30z"/>
+                            </svg>
                         </div>
                         <span id="span-top">Nouveau</span>
                     </a>
                 </article>
                 <article>
                     <a href="#menu2">
-                        <img class="eatery-img" src="img/restaurants/note-enchantee.jpg" alt="La note enchantée" title="La note enchantée">
+                        <img class="eatery-img" src="../P3_kim_melyna/img/restaurants/note-enchantee.jpg" alt="La note enchantée" title="La note enchantée">
                         <div class="eatery-info">
                             <div class="cards-info">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            <svg class="title-heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                         c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                         c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                         s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                         C512,93.417,453.532,30,376,30z"/>
+                            </svg>
                         </div>
-                        <span id="span-top-middle">Nouveau</span>
+                        <span id="span-top">Nouveau</span>
                     </a>
                 </article>
                 <article>
                     <a href="#menu3">
-                        <img class="eatery-img" src="img/restaurants/a-la-francaise.jpg" alt="À la française" title="À la française">
+                        <img class="eatery-img" src="../P3_kim_melyna/img/restaurants/a-la-francaise.jpg" alt="À la française" title="À la française">
                         <div class="eatery-info">
-                            <div id="cards-info">
+                            <div class="cards-info">
                                 <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            <svg class="title-heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                         c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                         c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                         s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                         C512,93.417,453.532,30,376,30z"/>
+                            </svg>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="#menu4">
-                        <img class="eatery-img" src="img/restaurants/delice-des-sens.jpg" alt="Le délice des sens" title="Le délice des sens">
+                        <img class="eatery-img" src="../P3_kim_melyna/img/restaurants/delice-des-sens.jpg" alt="Le délice des sens" title="Le délice des sens">
                         <div class="eatery-info">
                             <div class="cards-info">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            <svg class="title-heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                         c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                         c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                         s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                         C512,93.417,453.532,30,376,30z"/>
+                            </svg>
                         </div>
                     </a>
                 </article>
             </div>
         </section>
+        <!-- FIN DE SECTION EATERY -->
+        <!-- DEBUT DE FOOTER -->
         <footer>
             <h3>ohmyfood</h3>
             <ul>
